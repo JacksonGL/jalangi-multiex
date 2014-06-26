@@ -35,7 +35,7 @@
 rm result.bak.txt;
 mv result.txt result.bak.txt;
 
-# f arg1 arg2 arg3
+# f arg1 arg2
 # arg1 -> name of dataset
 # arg2 -> location
 f() {
