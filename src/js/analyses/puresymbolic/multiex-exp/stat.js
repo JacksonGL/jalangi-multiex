@@ -38,13 +38,13 @@
 	3: result.csv
 */
 
-var titles = ['data_name', 'algorithm', 'paths', 'total_time', 'bdd_time', 'solver_time', 'op_num', 'op_num_reexecute', 'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size'];
+var titles = ['data_name', 'algorithm', 'tests_num', 'total_time', 'bdd_time', 'solver_time', 'op_num', 'op_num_reexecute', 'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size'];
 
 function createRow() {
 	return {
 		data_name: null,
 		algorithm: null,
-		paths: null,
+		tests_num: null,
 		total_time: null,
 		bdd_time: null,
 		solver_time: null,
@@ -158,7 +158,7 @@ function process_line(line) {
 	// match (3) and (13)
 	res_array = /Tests Generated = (.*)/.exec(line);
 	if(res_array) {
-		currentRow.paths = res_array[1];
+		currentRow.tests_num = res_array[1];
 		return ;
 	}
 
