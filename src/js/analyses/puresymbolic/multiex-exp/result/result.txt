@@ -1,90 +1,44 @@
-[*]priority_queue
+[*]bresenham_drawline
 [*]single2
-Tests Generated = 94
-real	0m17.294s
-user	0m13.254s
-sys	0m2.927s
-Time spent in bdd = 85 ms
-Time spent in solver = 1936 ms
-Number of operations = 94
-Number of operations (inc. reexecution) = 1285
-Number of solver calls = 93
+Tests Generated = 57
+real	0m16.202s
+user	0m11.313s
+sys	0m3.182s
+Time spent in bdd = 212 ms
+Time spent in solver = 6937 ms
+Number of operations = 737
+Number of operations (inc. reexecution) = 2604
+Number of solver calls = 384
 [*]multiple
-Tests Generated = 16
-real	0m1.248s
-user	0m0.714s
-sys	0m0.329s
-Time spent in bdd = 12 ms
-Time spent in solver = 502 ms
-Number of solver calls = 40
-Number of operations = 40
-Number of operations (inc. reexecution) = 40
-Number of inputs = 16
-vs-size: average = 1.1612903225806452 max = 2 min = 1
-[*]queue
-[*]single2
-Tests Generated = 32
-real	0m5.935s
-user	0m4.566s
-sys	0m0.965s
-Time spent in bdd = 24 ms
-Time spent in solver = 617 ms
-Number of operations = 47
-Number of operations (inc. reexecution) = 240
-Number of solver calls = 31
-[*]multiple
-Tests Generated = 6
-real	0m0.756s
-user	0m0.514s
-sys	0m0.166s
-Time spent in bdd = 10 ms
-Time spent in solver = 129 ms
-Number of operations = 10
-Number of operations (inc. reexecution) = 10
-Number of solver calls = 10
-Number of inputs = 6
-vs-size: average = 1 max = 1 min = 1
-[*]stack
-[*]single2
-Tests Generated = 32
-real	0m5.926s
-user	0m4.560s
-sys	0m0.965s
-Time spent in bdd = 31 ms
-Time spent in solver = 623 ms
-Number of operations = 119
-Number of operations (inc. reexecution) = 624
-Number of solver calls = 31
-[*]multiple
-Tests Generated = 10
-real	0m0.839s
-user	0m0.557s
-sys	0m0.189s
-Time spent in bdd = 17 ms
-Time spent in solver = 185 ms
-Number of operations = 101
-Number of operations (inc. reexecution) = 101
-Number of solver calls = 14
-Number of inputs = 10
-vs-size: average = 2.2708333333333335 max = 6 min = 1
+Tests Generated = 61
+real	0m14.160s
+user	0m9.069s
+sys	0m3.119s
+Time spent in bdd = 3122 ms
+Time spent in solver = 10014 ms
+Number of operations = 1263
+Number of operations (inc. reexecution) = 1263
+Number of solver calls = 540
+Number of inputs = 61
+vs-size: average = 13.603211009174313 max = 81 min = 1
 [*]find_max
 [*]single2
 Tests Generated = 512
-real	1m37.690s
-user	1m14.447s
-sys	0m16.995s
+real	1m38.039s
+user	1m14.186s
+sys	0m17.617s
 Time spent in bdd = 523 ms
-Time spent in solver = 13896 ms
+Time spent in solver = 13885 ms
 Number of operations = 2344
 Number of operations (inc. reexecution) = 45568
 Number of solver calls = 511
 [*]multiple
 Tests Generated = 10
-real	0m1.302s
-user	0m0.865s
-sys	0m0.292s
-Time spent in bdd = 31 ms
-Time spent in solver = 605 ms
+real	0m1.317s
+user	0m0.870s
+sys	0m0.302s
+Time spent in bdd = 29 ms
+Time spent in solver = 596 ms
 Number of operations = 125
 Number of operations (inc. reexecution) = 125
 Number of solver calls = 31
@@ -93,21 +47,21 @@ vs-size: average = 1.8823529411764706 max = 10 min = 1
 [*]red_black
 [*]single2
 Tests Generated = 69
-real	0m12.661s
-user	0m9.791s
-sys	0m2.009s
-Time spent in bdd = 63 ms
-Time spent in solver = 1511 ms
+real	0m12.700s
+user	0m9.775s
+sys	0m2.079s
+Time spent in bdd = 60 ms
+Time spent in solver = 1495 ms
 Number of operations = 134
 Number of operations (inc. reexecution) = 1791
 Number of solver calls = 68
 [*]multiple
 Tests Generated = 9
-real	0m1.642s
-user	0m0.875s
-sys	0m0.477s
-Time spent in bdd = 16 ms
-Time spent in solver = 913 ms
+real	0m1.670s
+user	0m0.874s
+sys	0m0.486s
+Time spent in bdd = 24 ms
+Time spent in solver = 920 ms
 Number of operations = 31
 Number of operations (inc. reexecution) = 31
 Number of solver calls = 76
@@ -116,21 +70,21 @@ vs-size: average = 1.6344086021505377 max = 3 min = 1
 [*]calc_parser
 [*]single2
 Tests Generated = 633
-real	1m58.575s
-user	1m28.387s
-sys	0m21.840s
-Time spent in bdd = 927 ms
-Time spent in solver = 15515 ms
+real	1m59.105s
+user	1m28.190s
+sys	0m22.530s
+Time spent in bdd = 979 ms
+Time spent in solver = 15505 ms
 Number of operations = 3536
 Number of operations (inc. reexecution) = 23967
 Number of solver calls = 873
 [*]multiple
 Tests Generated = 337
-real	0m25.898s
-user	0m11.280s
-sys	0m8.424s
-Time spent in bdd = 2209 ms
-Time spent in solver = 20924 ms
+real	0m25.790s
+user	0m11.187s
+sys	0m8.493s
+Time spent in bdd = 2244 ms
+Time spent in solver = 20819 ms
 Number of operations = 1783
 Number of operations (inc. reexecution) = 1783
 Number of solver calls = 1639
@@ -139,44 +93,159 @@ vs-size: average = 20.12694877505568 max = 43 min = 1
 [*]pl_0_parser
 [*]single2
 Tests Generated = 2841
-real	9m0.956s
-user	6m43.632s
-sys	1m39.307s
-Time spent in bdd = 7900 ms
-Time spent in solver = 69916 ms
+real	9m2.903s
+user	6m42.465s
+sys	1m42.396s
+Time spent in bdd = 7834 ms
+Time spent in solver = 70324 ms
 Number of operations = 22928
 Number of operations (inc. reexecution) = 148726
 Number of solver calls = 3950
 [*]multiple
 Tests Generated = 2443
-real	4m29.980s
-user	1m59.959s
-sys	1m30.409s
-Time spent in bdd = 40481 ms
-Time spent in solver = 204894 ms
+real	4m32.338s
+user	2m0.234s
+sys	1m32.683s
+Time spent in bdd = 40889 ms
+Time spent in solver = 206364 ms
 Number of operations = 14417
 Number of operations (inc. reexecution) = 14417
 Number of solver calls = 16137
 Number of inputs = 2443
 vs-size: average = 26.268530997304584 max = 60 min = 1
+[*]binary_search_tree
+[*]single2
+Tests Generated = 541
+real	1m37.979s
+user	1m15.315s
+sys	0m15.667s
+Time spent in bdd = 592 ms
+Time spent in solver = 13944 ms
+Number of operations = 436
+Number of operations (inc. reexecution) = 11243
+Number of solver calls = 540
+[*]multiple
+Tests Generated = 75
+real	0m3.610s
+user	0m2.107s
+sys	0m0.844s
+Time spent in bdd = 104 ms
+Time spent in solver = 2545 ms
+Number of operations = 161
+Number of operations (inc. reexecution) = 161
+Number of solver calls = 135
+Number of inputs = 75
+vs-size: average = 2.3666666666666667 max = 5 min = 1
+[*]symbolic_array_index
+[*]single2
+Tests Generated = 121
+real	0m31.272s
+user	0m21.624s
+sys	0m6.403s
+Time spent in bdd = 532 ms
+Time spent in solver = 11627 ms
+Number of operations = 3324
+Number of operations (inc. reexecution) = 12826
+Number of solver calls = 660
+[*]multiple
+Tests Generated = 34
+real	0m6.349s
+user	0m3.190s
+sys	0m1.907s
+Time spent in bdd = 436 ms
+Time spent in solver = 5129 ms
+Number of operations = 980
+Number of operations (inc. reexecution) = 980
+Number of solver calls = 367
+Number of inputs = 34
+vs-size: average = 9.083682008368202 max = 12 min = 1
+[*]priority_queue
+[*]single2
+Tests Generated = 94
+real	0m17.681s
+user	0m13.433s
+sys	0m3.090s
+Time spent in bdd = 92 ms
+Time spent in solver = 1982 ms
+Number of operations = 94
+Number of operations (inc. reexecution) = 1285
+Number of solver calls = 93
+[*]multiple
+Tests Generated = 16
+real	0m1.287s
+user	0m0.727s
+sys	0m0.334s
+Time spent in bdd = 12 ms
+Time spent in solver = 530 ms
+Number of solver calls = 40
+Number of operations = 40
+Number of operations (inc. reexecution) = 40
+Number of inputs = 16
+vs-size: average = 1.1612903225806452 max = 2 min = 1
+[*]queue
+[*]single2
+Tests Generated = 32
+real	0m5.914s
+user	0m4.510s
+sys	0m0.986s
+Time spent in bdd = 29 ms
+Time spent in solver = 624 ms
+Number of operations = 47
+Number of operations (inc. reexecution) = 240
+Number of solver calls = 31
+[*]multiple
+Tests Generated = 6
+real	0m0.738s
+user	0m0.498s
+sys	0m0.162s
+Time spent in bdd = 7 ms
+Time spent in solver = 128 ms
+Number of operations = 10
+Number of operations (inc. reexecution) = 10
+Number of solver calls = 10
+Number of inputs = 6
+vs-size: average = 1 max = 1 min = 1
+[*]stack
+[*]single2
+Tests Generated = 32
+real	0m5.907s
+user	0m4.513s
+sys	0m0.983s
+Time spent in bdd = 28 ms
+Time spent in solver = 617 ms
+Number of operations = 119
+Number of operations (inc. reexecution) = 624
+Number of solver calls = 31
+[*]multiple
+Tests Generated = 10
+real	0m0.832s
+user	0m0.552s
+sys	0m0.187s
+Time spent in bdd = 19 ms
+Time spent in solver = 186 ms
+Number of operations = 101
+Number of operations (inc. reexecution) = 101
+Number of solver calls = 14
+Number of inputs = 10
+vs-size: average = 2.2708333333333335 max = 6 min = 1
 [*]kruskal
 [*]single2
 Tests Generated = 10001
-real	37m23.845s
-user	29m1.701s
-sys	6m15.319s
-Time spent in bdd = 61153 ms
-Time spent in solver = 342017 ms
+real	37m15.814s
+user	28m54.091s
+sys	6m16.241s
+Time spent in bdd = 60999 ms
+Time spent in solver = 336748 ms
 Number of operations = 31724
 Number of operations (inc. reexecution) = 794686
 Number of solver calls = 10019
 [*]multiple
 Tests Generated = 1
-real	0m2.766s
-user	0m1.600s
-sys	0m0.749s
-Time spent in bdd = 84 ms
-Time spent in solver = 698 ms
+real	0m2.653s
+user	0m1.590s
+sys	0m0.760s
+Time spent in bdd = 98 ms
+Time spent in solver = 684 ms
 Number of operations = 73
 Number of operations (inc. reexecution) = 73
 Number of solver calls = 37
@@ -186,20 +255,20 @@ vs-size: average = 4.091743119266055 max = 13 min = 1
 [*]single2
 Tests Generated = 94
 real	0m17.353s
-user	0m13.240s
-sys	0m2.975s
-Time spent in bdd = 96 ms
-Time spent in solver = 1944 ms
+user	0m13.262s
+sys	0m2.939s
+Time spent in bdd = 100 ms
+Time spent in solver = 1946 ms
 Number of operations = 94
 Number of operations (inc. reexecution) = 1285
 Number of solver calls = 93
 [*]multiple
 Tests Generated = 16
-real	0m1.247s
-user	0m0.721s
-sys	0m0.323s
-Time spent in bdd = 16 ms
-Time spent in solver = 497 ms
+real	0m1.206s
+user	0m0.700s
+sys	0m0.310s
+Time spent in bdd = 22 ms
+Time spent in solver = 478 ms
 Number of solver calls = 40
 Number of operations = 40
 Number of operations (inc. reexecution) = 40
@@ -208,21 +277,21 @@ vs-size: average = 1.1612903225806452 max = 2 min = 1
 [*]deque_linked_list
 [*]single2
 Tests Generated = 81
-real	0m14.346s
-user	0m11.013s
-sys	0m2.340s
+real	0m14.225s
+user	0m10.946s
+sys	0m2.268s
 Time spent in bdd = 71 ms
-Time spent in solver = 1703 ms
+Time spent in solver = 1661 ms
 Number of operations = 187
 Number of operations (inc. reexecution) = 1112
 Number of solver calls = 80
 [*]multiple
 Tests Generated = 17
-real	0m0.963s
-user	0m0.617s
-sys	0m0.223s
-Time spent in bdd = 20 ms
-Time spent in solver = 268 ms
+real	0m0.940s
+user	0m0.603s
+sys	0m0.214s
+Time spent in bdd = 12 ms
+Time spent in solver = 254 ms
 Number of operations = 72
 Number of operations (inc. reexecution) = 72
 Number of solver calls = 19
@@ -231,21 +300,21 @@ vs-size: average = 2.414285714285714 max = 5 min = 1
 [*]double_linked_list
 [*]single2
 Tests Generated = 216
-real	0m40.596s
-user	0m30.496s
-sys	0m6.982s
-Time spent in bdd = 373 ms
-Time spent in solver = 7146 ms
+real	0m40.098s
+user	0m30.301s
+sys	0m6.669s
+Time spent in bdd = 371 ms
+Time spent in solver = 6973 ms
 Number of operations = 693
 Number of operations (inc. reexecution) = 4272
 Number of solver calls = 387
 [*]multiple
 Tests Generated = 32
-real	0m1.819s
-user	0m1.119s
-sys	0m0.412s
-Time spent in bdd = 65 ms
-Time spent in solver = 968 ms
+real	0m1.795s
+user	0m1.114s
+sys	0m0.397s
+Time spent in bdd = 63 ms
+Time spent in solver = 939 ms
 Number of operations = 165
 Number of operations (inc. reexecution) = 165
 Number of solver calls = 53
@@ -254,24 +323,116 @@ vs-size: average = 3.1192660550458715 max = 7 min = 1
 [*]head_sort
 [*]single2
 Tests Generated = 18
-real	0m6.714s
-user	0m3.914s
-sys	0m1.784s
-Time spent in bdd = 68 ms
-Time spent in solver = 3221 ms
+real	0m6.627s
+user	0m3.885s
+sys	0m1.711s
+Time spent in bdd = 73 ms
+Time spent in solver = 3163 ms
 Number of operations = 4922
 Number of operations (inc. reexecution) = 6564
 Number of solver calls = 259
 [*]multiple
 Tests Generated = 25
-real	0m3.515s
-user	0m1.605s
-sys	0m1.140s
-Time spent in bdd = 63 ms
-Time spent in solver = 2732 ms
+real	0m3.480s
+user	0m1.604s
+sys	0m1.090s
+Time spent in bdd = 53 ms
+Time spent in solver = 2694 ms
 Number of operations = 530
 Number of operations (inc. reexecution) = 530
 Number of solver calls = 226
 Number of inputs = 25
 vs-size: average = 1.7469879518072289 max = 4 min = 1
+[*]selection_sort
+[*]single2
+Tests Generated = 194
+real	0m38.938s
+user	0m28.982s
+sys	0m7.075s
+Time spent in bdd = 234 ms
+Time spent in solver = 7532 ms
+Number of operations = 2486
+Number of operations (inc. reexecution) = 15908
+Number of solver calls = 359
+[*]multiple
+Tests Generated = 194
+real	0m31.602s
+user	0m15.607s
+sys	0m9.659s
+Time spent in bdd = 6119 ms
+Time spent in solver = 23844 ms
+Number of operations = 3830
+Number of operations (inc. reexecution) = 3830
+Number of solver calls = 1912
+Number of inputs = 194
+vs-size: average = 4.8898725977110775 max = 6 min = 1
+[*]insertion_sort
+[*]single2
+Tests Generated = 120
+real	0m22.164s
+user	0m16.808s
+sys	0m3.903s
+Time spent in bdd = 98 ms
+Time spent in solver = 2837 ms
+Number of operations = 533
+Number of operations (inc. reexecution) = 8692
+Number of solver calls = 119
+[*]multiple
+Tests Generated = 120
+real	0m7.530s
+user	0m3.632s
+sys	0m2.238s
+Time spent in bdd = 395 ms
+Time spent in solver = 6085 ms
+Number of operations = 1139
+Number of operations (inc. reexecution) = 1139
+Number of solver calls = 464
+Number of inputs = 120
+vs-size: average = 4.177777777777778 max = 5 min = 1
+[*]shell_sort
+[*]single2
+Tests Generated = 120
+real	0m23.451s
+user	0m17.581s
+sys	0m4.200s
+Time spent in bdd = 101 ms
+Time spent in solver = 3863 ms
+Number of operations = 834
+Number of operations (inc. reexecution) = 11538
+Number of solver calls = 167
+[*]multiple
+Tests Generated = 120
+real	0m10.516s
+user	0m4.792s
+sys	0m3.265s
+Time spent in bdd = 510 ms
+Time spent in solver = 8894 ms
+Number of operations = 1584
+Number of operations (inc. reexecution) = 1584
+Number of solver calls = 703
+Number of inputs = 120
+vs-size: average = 3.771334792122538 max = 5 min = 1
+[*]Kadane-max-subarray
+[*]single2
+Tests Generated = 162
+real	0m29.515s
+user	0m22.608s
+sys	0m4.741s
+Time spent in bdd = 159 ms
+Time spent in solver = 5080 ms
+Number of operations = 489
+Number of operations (inc. reexecution) = 7614
+Number of solver calls = 227
+[*]multiple
+Tests Generated = 10
+real	0m1.088s
+user	0m0.733s
+sys	0m0.229s
+Time spent in bdd = 34 ms
+Time spent in solver = 423 ms
+Number of operations = 127
+Number of operations (inc. reexecution) = 127
+Number of solver calls = 22
+Number of inputs = 10
+vs-size: average = 2.282051282051282 max = 16 min = 1
 [*]exp-done
