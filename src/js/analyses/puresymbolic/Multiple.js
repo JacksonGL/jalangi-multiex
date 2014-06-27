@@ -19,7 +19,6 @@
 module.exports = function (sandbox) {
     var stats = require('../../utils/StatCollector');
     var STAT_FLAG = stats.STAT_FLAG;
-    stats.resumeTimer("total");
 
     var single = {};
     require('./Single2')(single);
@@ -456,6 +455,7 @@ module.exports = function (sandbox) {
         left = makePredValues(BDD.one, left);
         right = makePredValues(BDD.one, right);
 
+        if (STAT_FLAG && op !== undefined) stats.addToCounter("multiex operations");
         var i, j, leni = left.values.length, lenj = right.values.length, pred, value, ret, newPC = new PredValues(), lenk, k;
         for (i = 0; i < leni; ++i) {
             for (j = 0; j < lenj; ++j) {
@@ -488,6 +488,7 @@ module.exports = function (sandbox) {
         }
         left = makePredValues(BDD.one, left);
 
+        if (STAT_FLAG) stats.addToCounter("multiex operations");
         var i, leni = left.values.length, pred, value, ret, newPC = new PredValues(), lenk, k;
         for (i = 0; i < leni; ++i) {
             pred = pc.getPC().and(left.values[i].pred);
@@ -547,8 +548,11 @@ module.exports = function (sandbox) {
         if (pc.isRetracing()) {
             return;
         }
-        base = makePredValues(BDD.one, base);
-        f = makePredValues(BDD.one, f);
+//        base = makePredValues(BDD.one, base);
+//        f = makePredValues(BDD.one, f);
+
+        base = makePredValues(BDD.one, base).mergeMax();
+        f = makePredValues(BDD.one, f).mergeMax();
 
         var i, j, leni = base.values.length, lenj = f.values.length, pred, value, ret, tmp, f2, newPC = new PredValues();
         pushSwitchKey();
@@ -585,6 +589,9 @@ module.exports = function (sandbox) {
 
     function Se(iid, val) {
         //pc.pushFrame(pc.getPC());
+        if (scriptCount===0) {
+            stats.resumeTimer("total");
+        }
         scriptCount++;
     }
 
