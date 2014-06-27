@@ -111,10 +111,17 @@ var fs = require('fs'),
     readline = require('readline');
 createTable();
 
+// read content from the file
 var rd = readline.createInterface({
     input: fs.createReadStream(process.argv[2]),
     output: process.stdout,
     terminal: false
+});
+
+// process the content line by line
+rd.on('line', function(line) {
+    console.log(line);
+    process_line(line);
 });
 
 function process_line(line) {
@@ -223,7 +230,4 @@ function process_line(line) {
 	}
 }
 
-rd.on('line', function(line) {
-    console.log(line);
-    process_line(line);
-});
+
