@@ -39,7 +39,7 @@
 */
 
 var titles = ['data_name', 'algorithm', 'total_time', 
-	'bdd_time', 'solver_time', 'within_theory_assign','op_num', 
+	'bdd_time', 'solver_time', 'within_theory_assign','op_num','multiex_op_num', 
 	//'op_num_reexecute', 
 	'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size',
 	'avg_pv_ratio', 'max_pv_ratio', 'min_pv_ratio'];
@@ -54,6 +54,7 @@ function createRow() {
 		solver_time: null,
 		within_theory_assign: null,
 		op_num: null,
+		multiex_op_num: null,
 		//op_num_reexecute: null,
 		solver_call_num: null,
 		input_num: null,
@@ -118,6 +119,7 @@ rd.on('line', function(line) {
 (10)	Number of inputs = 1952
 (11)	Number of within theory assignments = 449
 (12)	Number of operations = 7525
+(12-1)	Number of multiex operations = 962
 (13)	Number of solver calls = 1951
 (14)	vs-size: average = 216.37861915367483 max = 633 min = 1
 (15)	paths to value ratio: average = 7.642980022721954 max = 45.666666666666664 min = 1
@@ -132,6 +134,7 @@ rd.on('line', function(line) {
 (24)	Number of inputs = 337
 (25)	Number of within theory assignments = 449
 (26)	Number of operations = 1783
+(26-1)	Number of multiex operations = 962
 (27)	Number of solver calls = 336
 (28)	vs-size: average = 20.12694877505568 max = 43 min = 1
 (29)	paths to value ratio: average = 1 max = 1 min = 1
@@ -182,7 +185,7 @@ function process_line(line) {
 		return ;
 	}
 
-	/**/
+	/*
 	// match (4) and (18)
 	res_array = /real[\s]*((\d+)m)?(\d+(\.\d+)?)s/.exec(line);
 	if(res_array) {
@@ -191,15 +194,16 @@ function process_line(line) {
 		currentRow.total_time = m*60 + parseFloat(s);
 		return ;
 	}
-	
-	/*
+	*/
+
+	/**/
 	// match (7) and (21)
 	res_array = /Time spent in total = (\d+) ms/.exec(line);
 	if(res_array) {
 		currentRow.total_time = res_array[1];
 		return ;
 	}
-	*/
+	
 
 	// match (8) and (22)
 	res_array = /Time spent in bdd = (\d+) ms/.exec(line);
@@ -235,6 +239,13 @@ function process_line(line) {
 	res_array = /Number of within theory assignments = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.within_theory_assign = res_array[1];
+		return ;
+	}
+
+	// match (12-1) and (26-1)
+	res_array = /Number of multiex operations = (\d+)/.exec(line);
+	if(res_array) {
+		currentRow.multiex_op_num = res_array[1];
 		return ;
 	}
 

@@ -65,8 +65,7 @@ runexp() {
 : <<'END' 
 END
 
-# Bresenham drawline algorithm
-runexp "bresenham_drawline" "tests/multiex/algorithms/Bresenham-drawline"
+
 
 # max element
 runexp "find_max" "tests/compos/findMax"
@@ -125,12 +124,11 @@ runexp "shell_sort" "tests/multiex/algorithms/shellsort"
 # Kadane max sub array algorithm
 runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 
-
 # fac
-#runexp "index_of" "tests/compos/fac"
+# runexp "index_of" "tests/compos/fac"
 
 # index Of
-#runexp "index_of" "tests/compos/indexOf"
+# runexp "index_of" "tests/compos/indexOf"
 
 # knapsack
 # runexp "prim" "tests/multiex/algorithms/knapsack"
@@ -154,15 +152,18 @@ runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 # runexp "3d_morph" "tests/multiex/algorithms/3d-morph"
 
 # 3d-raytrace
-#runexp "3d_raytrace" "tests/multiex/algorithms/3d-raytrace"
+# runexp "3d_raytrace" "tests/multiex/algorithms/3d-raytrace"
 
 # access fannkuch
 # runexp "access_fannkuch" "tests/multiex/algorithms/access-fannkuch"
 
 # run length
-#runexp "run_length" "tests/multiex/algorithms/runlength"
+# runexp "run_length" "tests/multiex/algorithms/runlength"
 
 # longest increasing subsequence
 # runexp "longest_increase_subsequence" "tests/multiex/algorithms/long-increase-subseq"
+
+# Bresenham drawline algorithm
+# runexp "bresenham_drawline" "tests/multiex/algorithms/Bresenham-drawline"
 
 echo '[*]exp-done' >> result.txt
