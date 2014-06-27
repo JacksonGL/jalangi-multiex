@@ -1,438 +1,570 @@
 [*]bresenham_drawline
 [*]single2
-Tests Generated = 57
-real	0m16.202s
-user	0m11.313s
-sys	0m3.182s
-Time spent in bdd = 212 ms
-Time spent in solver = 6937 ms
-Number of operations = 737
-Number of operations (inc. reexecution) = 2604
-Number of solver calls = 384
+Tests Generated = 61
+real	0m8.242s
+user	0m5.224s
+sys	0m1.907s
+Time spent in total = 3177 ms
+Time spent in bdd = 1406 ms
+Time spent in solver = 5907 ms
+Number of inputs = 61
+Number of within theory assignments = 436
+Number of operations = 1029
+Number of solver calls = 310
+vs-size: average = 10.130733944954128 max = 44 min = 1
+paths to value ratio: average = 1.2094983253240132 max = 6.5 min = 1
 [*]multiple
 Tests Generated = 61
-real	0m14.160s
-user	0m9.069s
-sys	0m3.119s
-Time spent in bdd = 3122 ms
-Time spent in solver = 10014 ms
-Number of operations = 1263
-Number of operations (inc. reexecution) = 1263
-Number of solver calls = 540
+real	0m11.379s
+user	0m8.276s
+sys	0m2.057s
+Time spent in total = 5357 ms
+Time spent in bdd = 3300 ms
+Time spent in solver = 7068 ms
 Number of inputs = 61
+Number of within theory assignments = 436
+Number of operations = 1263
+Number of solver calls = 292
 vs-size: average = 13.603211009174313 max = 81 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]find_max
 [*]single2
-Tests Generated = 512
-real	1m38.039s
-user	1m14.186s
-sys	0m17.617s
-Time spent in bdd = 523 ms
-Time spent in solver = 13885 ms
-Number of operations = 2344
-Number of operations (inc. reexecution) = 45568
+Tests Generated = 10
+real	1m26.219s
+user	1m21.879s
+sys	0m3.476s
+Time spent in total = 85669 ms
+Time spent in bdd = 71064 ms
+Time spent in solver = 11758 ms
+Number of inputs = 512
+Number of within theory assignments = 51
+Number of operations = 4643
 Number of solver calls = 511
+vs-size: average = 40.72549019607843 max = 512 min = 1
+paths to value ratio: average = 22.9932150638033 max = 512 min = 1
 [*]multiple
 Tests Generated = 10
-real	0m1.317s
-user	0m0.870s
-sys	0m0.302s
-Time spent in bdd = 29 ms
-Time spent in solver = 596 ms
-Number of operations = 125
-Number of operations (inc. reexecution) = 125
-Number of solver calls = 31
+real	0m1.024s
+user	0m0.763s
+sys	0m0.178s
+Time spent in total = 508 ms
+Time spent in bdd = 25 ms
+Time spent in solver = 362 ms
 Number of inputs = 10
+Number of within theory assignments = 51
+Number of operations = 125
+Number of solver calls = 9
 vs-size: average = 1.8823529411764706 max = 10 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]red_black
 [*]single2
-Tests Generated = 69
-real	0m12.700s
-user	0m9.775s
-sys	0m2.079s
-Time spent in bdd = 60 ms
-Time spent in solver = 1495 ms
-Number of operations = 134
-Number of operations (inc. reexecution) = 1791
-Number of solver calls = 68
+Tests Generated = 9
+real	0m0.943s
+user	0m0.642s
+sys	0m0.203s
+Time spent in total = 388 ms
+Time spent in bdd = 22 ms
+Time spent in solver = 228 ms
+Number of inputs = 14
+Number of within theory assignments = 60
+Number of operations = 47
+Number of solver calls = 14
+Number of outside theory assignments = 33
+vs-size: average = 1.946236559139785 max = 6 min = 1
+paths to value ratio: average = 1.2096774193548387 max = 3 min = 1
 [*]multiple
 Tests Generated = 9
-real	0m1.670s
-user	0m0.874s
-sys	0m0.486s
-Time spent in bdd = 24 ms
-Time spent in solver = 920 ms
+real	0m0.862s
+user	0m0.598s
+sys	0m0.180s
+Time spent in total = 295 ms
+Time spent in bdd = 17 ms
+Time spent in solver = 142 ms
+Number of inputs = 10
+Number of within theory assignments = 61
 Number of operations = 31
-Number of operations (inc. reexecution) = 31
-Number of solver calls = 76
-Number of inputs = 9
+Number of solver calls = 9
+Number of outside theory assignments = 32
 vs-size: average = 1.6344086021505377 max = 3 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]calc_parser
 [*]single2
-Tests Generated = 633
-real	1m59.105s
-user	1m28.190s
-sys	0m22.530s
-Time spent in bdd = 979 ms
-Time spent in solver = 15505 ms
-Number of operations = 3536
-Number of operations (inc. reexecution) = 23967
-Number of solver calls = 873
+Tests Generated = 337
+real	1m11.688s
+user	0m53.099s
+sys	0m11.817s
+Time spent in total = 71115 ms
+Time spent in bdd = 34612 ms
+Time spent in solver = 32754 ms
+Number of inputs = 1952
+Number of within theory assignments = 449
+Number of operations = 7525
+Number of solver calls = 1951
+vs-size: average = 216.37861915367483 max = 633 min = 1
+paths to value ratio: average = 7.642980022721954 max = 45.666666666666664 min = 1
 [*]multiple
 Tests Generated = 337
-real	0m25.790s
-user	0m11.187s
-sys	0m8.493s
-Time spent in bdd = 2244 ms
-Time spent in solver = 20819 ms
-Number of operations = 1783
-Number of operations (inc. reexecution) = 1783
-Number of solver calls = 1639
+real	0m12.071s
+user	0m6.246s
+sys	0m2.972s
+Time spent in total = 11512 ms
+Time spent in bdd = 2168 ms
+Time spent in solver = 6408 ms
 Number of inputs = 337
+Number of within theory assignments = 449
+Number of operations = 1783
+Number of solver calls = 336
 vs-size: average = 20.12694877505568 max = 43 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]pl_0_parser
 [*]single2
-Tests Generated = 2841
-real	9m2.903s
-user	6m42.465s
-sys	1m42.396s
-Time spent in bdd = 7834 ms
-Time spent in solver = 70324 ms
-Number of operations = 22928
-Number of operations (inc. reexecution) = 148726
-Number of solver calls = 3950
+Tests Generated = 2443
+real	33m22.258s
+user	29m40.352s
+sys	2m35.223s
+Time spent in total = 2001642 ms
+Time spent in bdd = 1542043 ms
+Time spent in solver = 395549 ms
+Number of inputs = 22668
+Number of within theory assignments = 2968
+Number of operations = 58626
+Number of solver calls = 22667
+vs-size: average = 1143.9043126684637 max = 2841 min = 1
+paths to value ratio: average = 29.440845208624328 max = 143 min = 1
 [*]multiple
 Tests Generated = 2443
-real	4m32.338s
-user	2m0.234s
-sys	1m32.683s
-Time spent in bdd = 40889 ms
-Time spent in solver = 206364 ms
-Number of operations = 14417
-Number of operations (inc. reexecution) = 14417
-Number of solver calls = 16137
+real	1m47.485s
+user	1m3.248s
+sys	0m24.238s
+Time spent in total = 106127 ms
+Time spent in bdd = 32517 ms
+Time spent in solver = 48374 ms
 Number of inputs = 2443
+Number of within theory assignments = 2968
+Number of operations = 14417
+Number of solver calls = 2442
 vs-size: average = 26.268530997304584 max = 60 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]binary_search_tree
 [*]single2
 Tests Generated = 541
-real	1m37.979s
-user	1m15.315s
-sys	0m15.667s
-Time spent in bdd = 592 ms
-Time spent in solver = 13944 ms
-Number of operations = 436
-Number of operations (inc. reexecution) = 11243
-Number of solver calls = 540
+real	0m17.904s
+user	0m10.191s
+sys	0m3.921s
+Time spent in total = 16521 ms
+Time spent in bdd = 666 ms
+Time spent in solver = 13993 ms
+Number of inputs = 541
+Number of within theory assignments = 20
+Number of operations = 1173
+Number of solver calls = 631
+Number of outside theory assignments = 722
+vs-size: average = 8.673854447439354 max = 51 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]multiple
 Tests Generated = 75
-real	0m3.610s
-user	0m2.107s
-sys	0m0.844s
-Time spent in bdd = 104 ms
-Time spent in solver = 2545 ms
-Number of operations = 161
-Number of operations (inc. reexecution) = 161
-Number of solver calls = 135
+real	0m2.865s
+user	0m1.880s
+sys	0m0.582s
+Time spent in total = 2253 ms
+Time spent in bdd = 108 ms
+Time spent in solver = 1789 ms
 Number of inputs = 75
+Number of within theory assignments = 26
+Number of operations = 161
+Number of solver calls = 74
+Number of outside theory assignments = 94
 vs-size: average = 2.3666666666666667 max = 5 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]symbolic_array_index
 [*]single2
-Tests Generated = 121
-real	0m31.272s
-user	0m21.624s
-sys	0m6.403s
-Time spent in bdd = 532 ms
-Time spent in solver = 11627 ms
-Number of operations = 3324
-Number of operations (inc. reexecution) = 12826
-Number of solver calls = 660
+Tests Generated = 34
+real	0m29.821s
+user	0m23.906s
+sys	0m3.884s
+Time spent in total = 26547 ms
+Time spent in bdd = 17761 ms
+Time spent in solver = 10828 ms
+Number of inputs = 134
+Number of within theory assignments = 239
+Number of operations = 3926
+Number of solver calls = 673
+vs-size: average = 103.45188284518828 max = 505 min = 1
+paths to value ratio: average = 9.87639334166531 max = 45.90909090909091 min = 1
 [*]multiple
 Tests Generated = 34
-real	0m6.349s
-user	0m3.190s
-sys	0m1.907s
-Time spent in bdd = 436 ms
-Time spent in solver = 5129 ms
-Number of operations = 980
-Number of operations (inc. reexecution) = 980
-Number of solver calls = 367
+real	0m4.097s
+user	0m2.444s
+sys	0m1.050s
+Time spent in total = 2395 ms
+Time spent in bdd = 472 ms
+Time spent in solver = 2843 ms
 Number of inputs = 34
+Number of within theory assignments = 239
+Number of operations = 980
+Number of solver calls = 168
 vs-size: average = 9.083682008368202 max = 12 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]priority_queue
 [*]single2
-Tests Generated = 94
-real	0m17.681s
-user	0m13.433s
-sys	0m3.090s
-Time spent in bdd = 92 ms
-Time spent in solver = 1982 ms
-Number of operations = 94
-Number of operations (inc. reexecution) = 1285
-Number of solver calls = 93
+Tests Generated = 13
+real	0m1.335s
+user	0m0.834s
+sys	0m0.326s
+Time spent in total = 756 ms
+Time spent in bdd = 25 ms
+Time spent in solver = 578 ms
+Number of inputs = 34
+Number of within theory assignments = 39
+Number of operations = 48
+Number of solver calls = 35
+Number of outside theory assignments = 13
+vs-size: average = 1.9807692307692308 max = 5 min = 1
+paths to value ratio: average = 1.4807692307692308 max = 5 min = 1
 [*]multiple
 Tests Generated = 16
-real	0m1.287s
-user	0m0.727s
-sys	0m0.334s
-Time spent in bdd = 12 ms
-Time spent in solver = 530 ms
-Number of solver calls = 40
-Number of operations = 40
-Number of operations (inc. reexecution) = 40
+real	0m1.033s
+user	0m0.605s
+sys	0m0.236s
+Time spent in total = 472 ms
+Time spent in bdd = 16 ms
+Time spent in solver = 219 ms
 Number of inputs = 16
+Number of within theory assignments = 57
+Number of operations = 40
+Number of solver calls = 15
+Number of outside theory assignments = 5
 vs-size: average = 1.1612903225806452 max = 2 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]queue
 [*]single2
-Tests Generated = 32
-real	0m5.914s
-user	0m4.510s
-sys	0m0.986s
-Time spent in bdd = 29 ms
-Time spent in solver = 624 ms
-Number of operations = 47
-Number of operations (inc. reexecution) = 240
-Number of solver calls = 31
+Tests Generated = 5
+real	0m0.784s
+user	0m0.538s
+sys	0m0.171s
+Time spent in total = 243 ms
+Time spent in bdd = 18 ms
+Time spent in solver = 139 ms
+Number of inputs = 8
+Number of within theory assignments = 27
+Number of operations = 10
+Number of solver calls = 9
+Number of outside theory assignments = 26
+vs-size: average = 1.849056603773585 max = 3 min = 1
+paths to value ratio: average = 1.2547169811320755 max = 3 min = 1
 [*]multiple
 Tests Generated = 6
-real	0m0.738s
-user	0m0.498s
-sys	0m0.162s
-Time spent in bdd = 7 ms
-Time spent in solver = 128 ms
-Number of operations = 10
-Number of operations (inc. reexecution) = 10
-Number of solver calls = 10
+real	0m0.685s
+user	0m0.481s
+sys	0m0.144s
+Time spent in total = 162 ms
+Time spent in bdd = 5 ms
+Time spent in solver = 71 ms
 Number of inputs = 6
+Number of within theory assignments = 53
+Number of operations = 10
+Number of solver calls = 5
 vs-size: average = 1 max = 1 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]stack
 [*]single2
-Tests Generated = 32
-real	0m5.907s
-user	0m4.513s
-sys	0m0.983s
-Time spent in bdd = 28 ms
-Time spent in solver = 617 ms
-Number of operations = 119
-Number of operations (inc. reexecution) = 624
-Number of solver calls = 31
+Tests Generated = 6
+real	0m2.207s
+user	0m1.285s
+sys	0m0.578s
+Time spent in total = 1683 ms
+Time spent in bdd = 88 ms
+Time spent in solver = 1440 ms
+Number of inputs = 32
+Number of within theory assignments = 65
+Number of operations = 227
+Number of solver calls = 91
+Number of outside theory assignments = 129
+vs-size: average = 10.670103092783505 max = 32 min = 1
+paths to value ratio: average = 1.9992562653337902 max = 6.4 min = 1
 [*]multiple
 Tests Generated = 10
-real	0m0.832s
-user	0m0.552s
-sys	0m0.187s
-Time spent in bdd = 19 ms
-Time spent in solver = 186 ms
-Number of operations = 101
-Number of operations (inc. reexecution) = 101
-Number of solver calls = 14
+real	0m0.767s
+user	0m0.526s
+sys	0m0.165s
+Time spent in total = 234 ms
+Time spent in bdd = 15 ms
+Time spent in solver = 131 ms
 Number of inputs = 10
+Number of within theory assignments = 26
+Number of operations = 101
+Number of solver calls = 9
+Number of outside theory assignments = 22
 vs-size: average = 2.2708333333333335 max = 6 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]kruskal
 [*]single2
-Tests Generated = 10001
-real	37m15.814s
-user	28m54.091s
-sys	6m16.241s
-Time spent in bdd = 60999 ms
-Time spent in solver = 336748 ms
-Number of operations = 31724
-Number of operations (inc. reexecution) = 794686
-Number of solver calls = 10019
+Tests Generated = 1
+real	0m1.959s
+user	0m1.507s
+sys	0m0.302s
+Time spent in total = 771 ms
+Time spent in bdd = 103 ms
+Time spent in solver = 553 ms
+Number of inputs = 25
+Number of within theory assignments = 85
+Number of operations = 73
+Number of solver calls = 24
+Number of outside theory assignments = 24
+vs-size: average = 4.10091743119266 max = 13 min = 1
+paths to value ratio: average = 1.0091743119266054 max = 2 min = 1
 [*]multiple
 Tests Generated = 1
-real	0m2.653s
-user	0m1.590s
-sys	0m0.760s
-Time spent in bdd = 98 ms
-Time spent in solver = 684 ms
+real	0m1.918s
+user	0m1.468s
+sys	0m0.293s
+Time spent in total = 762 ms
+Time spent in bdd = 88 ms
+Time spent in solver = 561 ms
+Number of inputs = 25
+Number of within theory assignments = 85
 Number of operations = 73
-Number of operations (inc. reexecution) = 73
-Number of solver calls = 37
-Number of inputs = 1
+Number of solver calls = 24
+Number of outside theory assignments = 24
 vs-size: average = 4.091743119266055 max = 13 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]priority_queue
 [*]single2
-Tests Generated = 94
-real	0m17.353s
-user	0m13.262s
-sys	0m2.939s
-Time spent in bdd = 100 ms
-Time spent in solver = 1946 ms
-Number of operations = 94
-Number of operations (inc. reexecution) = 1285
-Number of solver calls = 93
+Tests Generated = 13
+real	0m1.319s
+user	0m0.841s
+sys	0m0.303s
+Time spent in total = 733 ms
+Time spent in bdd = 21 ms
+Time spent in solver = 577 ms
+Number of inputs = 34
+Number of within theory assignments = 39
+Number of operations = 48
+Number of solver calls = 35
+Number of outside theory assignments = 13
+vs-size: average = 1.9807692307692308 max = 5 min = 1
+paths to value ratio: average = 1.4807692307692308 max = 5 min = 1
 [*]multiple
 Tests Generated = 16
-real	0m1.206s
-user	0m0.700s
-sys	0m0.310s
-Time spent in bdd = 22 ms
-Time spent in solver = 478 ms
-Number of solver calls = 40
-Number of operations = 40
-Number of operations (inc. reexecution) = 40
+real	0m0.999s
+user	0m0.605s
+sys	0m0.230s
+Time spent in total = 438 ms
+Time spent in bdd = 23 ms
+Time spent in solver = 237 ms
 Number of inputs = 16
+Number of within theory assignments = 57
+Number of operations = 40
+Number of solver calls = 15
+Number of outside theory assignments = 5
 vs-size: average = 1.1612903225806452 max = 2 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]deque_linked_list
 [*]single2
-Tests Generated = 81
-real	0m14.225s
-user	0m10.946s
-sys	0m2.268s
-Time spent in bdd = 71 ms
-Time spent in solver = 1661 ms
-Number of operations = 187
-Number of operations (inc. reexecution) = 1112
-Number of solver calls = 80
+Tests Generated = 9
+real	0m3.695s
+user	0m2.098s
+sys	0m0.978s
+Time spent in total = 3143 ms
+Time spent in bdd = 372 ms
+Time spent in solver = 2507 ms
+Number of inputs = 81
+Number of within theory assignments = 125
+Number of operations = 316
+Number of solver calls = 158
+Number of outside theory assignments = 213
+vs-size: average = 13.81360946745562 max = 60 min = 1
+paths to value ratio: average = 2.0031603832691944 max = 12 min = 1
 [*]multiple
 Tests Generated = 17
-real	0m0.940s
-user	0m0.603s
-sys	0m0.214s
+real	0m0.935s
+user	0m0.595s
+sys	0m0.212s
+Time spent in total = 390 ms
 Time spent in bdd = 12 ms
-Time spent in solver = 254 ms
-Number of operations = 72
-Number of operations (inc. reexecution) = 72
-Number of solver calls = 19
+Time spent in solver = 243 ms
 Number of inputs = 17
+Number of within theory assignments = 42
+Number of operations = 72
+Number of solver calls = 16
+Number of outside theory assignments = 28
 vs-size: average = 2.414285714285714 max = 5 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]double_linked_list
 [*]single2
-Tests Generated = 216
-real	0m40.098s
-user	0m30.301s
-sys	0m6.669s
-Time spent in bdd = 371 ms
-Time spent in solver = 6973 ms
-Number of operations = 693
-Number of operations (inc. reexecution) = 4272
-Number of solver calls = 387
+Tests Generated = 56
+real	0m13.482s
+user	0m8.143s
+sys	0m3.338s
+Time spent in total = 12895 ms
+Time spent in bdd = 2605 ms
+Time spent in solver = 9503 ms
+Number of inputs = 216
+Number of within theory assignments = 169
+Number of operations = 1127
+Number of solver calls = 550
+Number of outside theory assignments = 370
+vs-size: average = 47.465677179962896 max = 143 min = 1
+paths to value ratio: average = 5.827405308642572 max = 35.75 min = 1
 [*]multiple
 Tests Generated = 32
-real	0m1.795s
-user	0m1.114s
-sys	0m0.397s
-Time spent in bdd = 63 ms
-Time spent in solver = 939 ms
-Number of operations = 165
-Number of operations (inc. reexecution) = 165
-Number of solver calls = 53
+real	0m1.750s
+user	0m1.074s
+sys	0m0.365s
+Time spent in total = 1172 ms
+Time spent in bdd = 71 ms
+Time spent in solver = 799 ms
 Number of inputs = 32
+Number of within theory assignments = 47
+Number of operations = 165
+Number of solver calls = 40
+Number of outside theory assignments = 62
 vs-size: average = 3.1192660550458715 max = 7 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]head_sort
 [*]single2
-Tests Generated = 18
-real	0m6.627s
-user	0m3.885s
-sys	0m1.711s
-Time spent in bdd = 73 ms
-Time spent in solver = 3163 ms
-Number of operations = 4922
-Number of operations (inc. reexecution) = 6564
-Number of solver calls = 259
+Tests Generated = 25
+real	0m5.165s
+user	0m3.727s
+sys	0m0.917s
+Time spent in total = 4610 ms
+Time spent in bdd = 1778 ms
+Time spent in solver = 2495 ms
+Number of inputs = 143
+Number of within theory assignments = 350
+Number of operations = 5281
+Number of solver calls = 142
+Number of outside theory assignments = 143
+vs-size: average = 11.04868154158215 max = 18 min = 1
+paths to value ratio: average = 5.503177822853279 max = 18 min = 1
 [*]multiple
 Tests Generated = 25
-real	0m3.480s
-user	0m1.604s
-sys	0m1.090s
-Time spent in bdd = 53 ms
-Time spent in solver = 2694 ms
-Number of operations = 530
-Number of operations (inc. reexecution) = 530
-Number of solver calls = 226
+real	0m1.335s
+user	0m0.828s
+sys	0m0.276s
+Time spent in total = 783 ms
+Time spent in bdd = 47 ms
+Time spent in solver = 494 ms
 Number of inputs = 25
+Number of within theory assignments = 166
+Number of operations = 530
+Number of solver calls = 24
 vs-size: average = 1.7469879518072289 max = 4 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]selection_sort
 [*]single2
 Tests Generated = 194
-real	0m38.938s
-user	0m28.982s
-sys	0m7.075s
-Time spent in bdd = 234 ms
-Time spent in solver = 7532 ms
-Number of operations = 2486
-Number of operations (inc. reexecution) = 15908
-Number of solver calls = 359
+real	0m36.059s
+user	0m31.327s
+sys	0m3.503s
+Time spent in total = 35507 ms
+Time spent in bdd = 26636 ms
+Time spent in solver = 5959 ms
+Number of inputs = 194
+Number of within theory assignments = 4631
+Number of operations = 3830
+Number of solver calls = 295
+vs-size: average = 135.09198877132368 max = 296 min = 1
+paths to value ratio: average = 28.111851292017523 max = 74 min = 1
 [*]multiple
 Tests Generated = 194
-real	0m31.602s
-user	0m15.607s
-sys	0m9.659s
-Time spent in bdd = 6119 ms
-Time spent in solver = 23844 ms
-Number of operations = 3830
-Number of operations (inc. reexecution) = 3830
-Number of solver calls = 1912
+real	0m14.955s
+user	0m10.621s
+sys	0m2.745s
+Time spent in total = 14415 ms
+Time spent in bdd = 6976 ms
+Time spent in solver = 6148 ms
 Number of inputs = 194
+Number of within theory assignments = 4631
+Number of operations = 3830
+Number of solver calls = 295
 vs-size: average = 4.8898725977110775 max = 6 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]insertion_sort
 [*]single2
 Tests Generated = 120
-real	0m22.164s
-user	0m16.808s
-sys	0m3.903s
-Time spent in bdd = 98 ms
-Time spent in solver = 2837 ms
-Number of operations = 533
-Number of operations (inc. reexecution) = 8692
+real	0m5.327s
+user	0m3.570s
+sys	0m1.038s
+Time spent in total = 4790 ms
+Time spent in bdd = 1603 ms
+Time spent in solver = 2482 ms
+Number of inputs = 120
+Number of within theory assignments = 630
+Number of operations = 1139
 Number of solver calls = 119
+vs-size: average = 43.214285714285715 max = 120 min = 1
+paths to value ratio: average = 10.831058201058202 max = 120 min = 1
 [*]multiple
 Tests Generated = 120
-real	0m7.530s
-user	0m3.632s
-sys	0m2.238s
-Time spent in bdd = 395 ms
-Time spent in solver = 6085 ms
-Number of operations = 1139
-Number of operations (inc. reexecution) = 1139
-Number of solver calls = 464
+real	0m3.986s
+user	0m2.433s
+sys	0m0.884s
+Time spent in total = 3462 ms
+Time spent in bdd = 436 ms
+Time spent in solver = 2423 ms
 Number of inputs = 120
+Number of within theory assignments = 630
+Number of operations = 1139
+Number of solver calls = 119
 vs-size: average = 4.177777777777778 max = 5 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]shell_sort
 [*]single2
 Tests Generated = 120
-real	0m23.451s
-user	0m17.581s
-sys	0m4.200s
-Time spent in bdd = 101 ms
-Time spent in solver = 3863 ms
-Number of operations = 834
-Number of operations (inc. reexecution) = 11538
-Number of solver calls = 167
+real	0m7.108s
+user	0m4.955s
+sys	0m1.360s
+Time spent in total = 6560 ms
+Time spent in bdd = 2790 ms
+Time spent in solver = 2865 ms
+Number of inputs = 120
+Number of within theory assignments = 914
+Number of operations = 1584
+Number of solver calls = 143
+vs-size: average = 49.59299781181619 max = 144 min = 1
+paths to value ratio: average = 14.061615609044496 max = 72 min = 1
 [*]multiple
 Tests Generated = 120
-real	0m10.516s
-user	0m4.792s
-sys	0m3.265s
-Time spent in bdd = 510 ms
-Time spent in solver = 8894 ms
-Number of operations = 1584
-Number of operations (inc. reexecution) = 1584
-Number of solver calls = 703
+real	0m4.868s
+user	0m2.773s
+sys	0m1.107s
+Time spent in total = 4340 ms
+Time spent in bdd = 588 ms
+Time spent in solver = 3024 ms
 Number of inputs = 120
+Number of within theory assignments = 914
+Number of operations = 1584
+Number of solver calls = 143
 vs-size: average = 3.771334792122538 max = 5 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]Kadane-max-subarray
 [*]single2
-Tests Generated = 162
-real	0m29.515s
-user	0m22.608s
-sys	0m4.741s
-Time spent in bdd = 159 ms
-Time spent in solver = 5080 ms
-Number of operations = 489
-Number of operations (inc. reexecution) = 7614
-Number of solver calls = 227
+Tests Generated = 10
+real	0m30.907s
+user	0m28.762s
+sys	0m1.479s
+Time spent in total = 30386 ms
+Time spent in bdd = 24402 ms
+Time spent in solver = 4877 ms
+Number of inputs = 212
+Number of within theory assignments = 39
+Number of operations = 915
+Number of solver calls = 219
+vs-size: average = 19.615384615384617 max = 194 min = 1
+paths to value ratio: average = 4.173054414724936 max = 64.66666666666667 min = 1
 [*]multiple
 Tests Generated = 10
-real	0m1.088s
-user	0m0.733s
-sys	0m0.229s
-Time spent in bdd = 34 ms
-Time spent in solver = 423 ms
-Number of operations = 127
-Number of operations (inc. reexecution) = 127
-Number of solver calls = 22
+real	0m0.962s
+user	0m0.683s
+sys	0m0.179s
+Time spent in total = 446 ms
+Time spent in bdd = 30 ms
+Time spent in solver = 308 ms
 Number of inputs = 10
+Number of within theory assignments = 39
+Number of operations = 127
+Number of solver calls = 9
 vs-size: average = 2.282051282051282 max = 16 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]exp-done

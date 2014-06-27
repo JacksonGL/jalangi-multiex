@@ -1,18 +1,32 @@
-[*]priority_queue
+[*]bresenham_drawline
 [*]single2
-Tests Generated = 3
-real	0m0.969s
-user	0m0.739s
-sys	0m0.175s
-Time spent in bdd = 4 ms
-Time spent in solver = 35 ms
-Number of operations = 3
-Number of operations (inc. reexecution) = 9
-Number of solver calls = 2
+Tests Generated = 61
+real	0m8.169s
+user	0m5.205s
+sys	0m1.860s
+Time spent in total = 3197 ms
+Time spent in bdd = 1402 ms
+Time spent in solver = 5841 ms
+Number of inputs = 61
+Number of within theory assignments = 436
+Number of operations = 1029
+Number of solver calls = 310
+vs-size: average = 10.130733944954128 max = 44 min = 1
+paths to value ratio: average = 1.2094983253240132 max = 6.5 min = 1
 [*]multiple
-[*]queue
-[*]single2
-[*]multiple
+Tests Generated = 61
+real	0m11.217s
+user	0m8.171s
+sys	0m1.986s
+Time spent in total = 5264 ms
+Time spent in bdd = 3234 ms
+Time spent in solver = 6981 ms
+Number of inputs = 61
+Number of within theory assignments = 436
+Number of operations = 1263
+Number of solver calls = 292
+vs-size: average = 13.603211009174313 max = 81 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]find_max
 [*]single2
 [*]multiple
@@ -25,7 +39,10 @@ Number of solver calls = 2
 [*]pl_0_parser
 [*]single2
 [*]multiple
-[*]kruskal
+[*]binary_search_tree
+[*]single2
+[*]multiple
+[*]symbolic_array_index
 [*]single2
 [*]multiple
 [*]priority_queue
@@ -33,3 +50,10 @@ Number of solver calls = 2
 [*]multiple
 [*]queue
 [*]single2
+[*]multiple
+[*]stack
+[*]single2
+[*]multiple
+[*]kruskal
+[*]single2
+[*]multiple
