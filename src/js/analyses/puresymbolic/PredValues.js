@@ -20,6 +20,14 @@
 (function (module) {
 
     var MERGE_ENABLED = true;
+    try {
+        var content = require('fs').readFileSync(require('path').resolve(process.cwd(), '../merge_flag.txt'),'utf8');
+        if(content.indexOf('false') >= 0) {
+            MERGE_ENABLED = false;
+        }
+    } catch (e) {
+        // do nothing
+    }
 
     var BDD = require('./BDD');
     var Symbolic = require('./../concolic/Symbolic');
