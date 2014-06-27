@@ -38,7 +38,7 @@ mv result.txt result.bak.txt;
 # f arg1 arg2
 # arg1 -> name of dataset
 # arg2 -> location
-f() {
+runexp() {
     echo '[*]'"$1" >> result.txt
 	echo '[*]single2' >> result.txt
 	# run conventional symbolic execution on dataset
@@ -53,40 +53,109 @@ f() {
 	cd jalangi_tmp; node ../src/js/utils/StatCollector.js >> ../result.txt; cd ..
 }
 
+
+
+: <<'END' 
+END
+
+# Bresenham drawline algorithm
+runexp "bresenham_drawline" "tests/multiex/algorithms/Bresenham-drawline"
+
 # max element
-f "find_max" "tests/compos/findMax"
+runexp "find_max" "tests/compos/findMax"
 
 # red black tree
-f "red_black" "tests/compos/redblack"
+runexp "red_black" "tests/compos/redblack"
 
 # calc parser
-f "calc_parser" "tests/compos/parser"
+runexp "calc_parser" "tests/compos/parser"
 
 # PL/0 parser
-f "pl_0_parser" "tests/compos/parser2"
+runexp "pl_0_parser" "tests/compos/parser2"
+
+# binary seearch tree
+runexp "binary_search_tree" "tests/compos/bst"
+
+# symbolic array index
+runexp "symbolic_array_index" "tests/compos/symbolicArrayIndex"
+
+# index Of full
+# runexp "index_of_full" "tests/compos/indexOfFull" # single2 runs forever;
 
 # priority queue
-f "priority_queue" "tests/multiex/datastructures/PriorityQueue"
+runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue"
 
 # queue
-f "queue" "tests/multiex/datastructures/Queue"
+runexp "queue" "tests/multiex/datastructures/Queue"
 
 # stack
-f "stack" "tests/multiex/datastructures/stack"
+runexp "stack" "tests/multiex/datastructures/stack"
 
 # kruskal algorithm
-f "kruskal" "tests/multiex/algorithms/Kruskal"
+runexp "kruskal" "tests/multiex/algorithms/Kruskal"
 
 # priority queue
-f "priority_queue" "tests/multiex/datastructures/PriorityQueue"
+runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue"
 
 # deque linked list
-f "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
+runexp "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
 
 # double linked list
-f "double_linked_list" "tests/multiex/datastructures/DoubleLinkedList"
+runexp "double_linked_list" "tests/multiex/datastructures/DoubleLinkedList"
 
 # heap sort
-f "head_sort" "tests/multiex/algorithms/heapSort"
+runexp "head_sort" "tests/multiex/algorithms/heapSort"
+
+# selection sort
+runexp "selection_sort" "tests/multiex/algorithms/selection-sort"
+
+# insertion sort
+runexp "insertion_sort" "tests/multiex/algorithms/insertion-sort"
+
+# shell sort
+runexp "shell_sort" "tests/multiex/algorithms/shellsort"
+
+# Kadane max sub array algorithm
+runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
+
+
+# fac
+#runexp "index_of" "tests/compos/fac"
+
+# index Of
+#runexp "index_of" "tests/compos/indexOf"
+
+# knapsack
+# runexp "prim" "tests/multiex/algorithms/knapsack"
+
+# bfs
+# runexp "prim" "tests/multiex/algorithms/bfs"
+
+# merge sort
+# runexp "merge_sort" "tests/multiex/algorithms/mergeSort"
+
+# prim algorithm
+# runexp "prim" "tests/multiex/algorithms/Prim"
+
+# damerau levenshtein
+# runexp "damerau_levenshtein" "tests/multiex/algorithms/Damerau-Levenshtein"
+
+# 3d-cube
+# runexp "3d_cube" "tests/multiex/algorithms/3d-cube"
+
+# 3d-morph
+# runexp "3d_morph" "tests/multiex/algorithms/3d-morph"
+
+# 3d-raytrace
+#runexp "3d_raytrace" "tests/multiex/algorithms/3d-raytrace"
+
+# access fannkuch
+# runexp "access_fannkuch" "tests/multiex/algorithms/access-fannkuch"
+
+# run length
+#runexp "run_length" "tests/multiex/algorithms/runlength"
+
+# longest increasing subsequence
+# runexp "longest_increase_subsequence" "tests/multiex/algorithms/long-increase-subseq"
 
 echo '[*]exp-done' >> result.txt
