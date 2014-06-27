@@ -65,8 +65,6 @@ runexp() {
 : <<'END' 
 END
 
-
-
 # max element
 runexp "find_max" "tests/compos/findMax"
 
@@ -97,14 +95,8 @@ runexp "queue" "tests/multiex/datastructures/Queue"
 # stack
 runexp "stack" "tests/multiex/datastructures/stack"
 
-# kruskal algorithm
-runexp "kruskal" "tests/multiex/algorithms/Kruskal"
-
 # priority queue
 runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue"
-
-# deque linked list
-runexp "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
 
 # double linked list
 runexp "double_linked_list" "tests/multiex/datastructures/DoubleLinkedList"
@@ -165,5 +157,11 @@ runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 
 # Bresenham drawline algorithm
 # runexp "bresenham_drawline" "tests/multiex/algorithms/Bresenham-drawline"
+
+# kruskal algorithm
+# runexp "kruskal" "tests/multiex/algorithms/Kruskal"
+
+# deque linked list
+# runexp "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
 
 echo '[*]exp-done' >> result.txt

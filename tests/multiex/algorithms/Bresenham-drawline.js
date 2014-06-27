@@ -77,6 +77,10 @@ if(y1 < -4) {
 }
 
 drawLine(x1, 2, y1, 3);
-
+drawLine(x1, 4, y1, 2);
+drawLine(x1, 3, y1, 1);
+drawLine(x1, 2, y1, 3);
+drawLine(x1, 4, y1, 2);
+drawLine(x1, 3, y1, 1);
 
 
