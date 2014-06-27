@@ -38,11 +38,7 @@
 	3: result.csv
 */
 
-var titles = ['data_name', 'algorithm', 'total_time', 
-	'bdd_time', 'solver_time', 'within_theory_assign','op_num', 
-	//'op_num_reexecute', 
-	'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size',
-	'avg_pv_ratio', 'max_pv_ratio', 'min_pv_ratio'];
+var titles = ['data_name', 'algorithm', 'tests_num', 'total_time', 'bdd_time', 'solver_time', 'op_num', 'op_num_reexecute', 'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size'];
 
 function createRow() {
 	return {
@@ -52,17 +48,13 @@ function createRow() {
 		total_time: null,
 		bdd_time: null,
 		solver_time: null,
-		within_theory_assign: null,
 		op_num: null,
-		//op_num_reexecute: null,
+		op_num_reexecute: null,
 		solver_call_num: null,
 		input_num: null,
 		avg_vs_size: null,
 		max_vs_size: null,
 		min_vs_size: null,
-		avg_pv_ratio: null,
-		max_pv_ratio: null,
-		min_pv_ratio: null
 	};
 }
 
@@ -87,6 +79,34 @@ function appendRow(row) {
 	table.push(row_str);
 }
 
+/*
+  # template of output
+
+(1)	[*]find_max
+(2)	[*]single2
+(3)	Tests Generated = 512
+(4)	real	1m38.860s
+(5)	user	1m14.651s
+(6)	sys	0m17.906s
+(7)	Time spent in bdd = 513 ms
+(8)	Time spent in solver = 14539 ms
+(9)	Number of operations = 2344
+(10)	Number of operations (inc. reexecution) = 45568
+(11)	Number of solver calls = 511
+(12)	[*]multiple
+(13)	Tests Generated = 10
+(14)	real	0m1.345s
+(15)	user	0m0.874s
+(16)	sys	0m0.323s
+(17)	Time spent in bdd = 32 ms
+(18)	Time spent in solver = 637 ms
+(19)	Number of operations = 125
+(20)	Number of operations (inc. reexecution) = 125
+(21)	Number of solver calls = 31
+(22)	Number of inputs = 10
+(23)	vs-size: average = 1.8823529411764706 max = 10 min = 1
+*/
+
 var fs = require('fs'),
     readline = require('readline');
 createTable();
@@ -104,43 +124,10 @@ rd.on('line', function(line) {
     process_line(line);
 });
 
-
-/*
-(1)		[*]calc_parser
-(2)		[*]single2
-(3)		Tests Generated = 337
-(4)		real	1m13.698s
-(5)		user	0m53.941s
-(6)		sys	0m11.932s
-(7)		Time spent in total = 73133 ms
-(8)		Time spent in bdd = 35234 ms
-(9)		Time spent in solver = 33936 ms
-(10)	Number of inputs = 1952
-(11)	Number of within theory assignments = 449
-(12)	Number of operations = 7525
-(13)	Number of solver calls = 1951
-(14)	vs-size: average = 216.37861915367483 max = 633 min = 1
-(15)	paths to value ratio: average = 7.642980022721954 max = 45.666666666666664 min = 1
-(16)	[*]multiple
-(17)	Tests Generated = 337
-(18)	real	0m11.568s
-(19)	user	0m6.255s
-(20)	sys	0m2.720s
-(21)	Time spent in total = 10994 ms
-(22)	Time spent in bdd = 2176 ms
-(23)	Time spent in solver = 6279 ms
-(24)	Number of inputs = 337
-(25)	Number of within theory assignments = 449
-(26)	Number of operations = 1783
-(27)	Number of solver calls = 336
-(28)	vs-size: average = 20.12694877505568 max = 43 min = 1
-(29)	paths to value ratio: average = 1 max = 1 min = 1
-*/
-
 function process_line(line) {
 	var res_array;
 
-	// match (1) (2) (16) and the ending
+	// match (1) (2) (12) and the ending
 	res_array = /\[\*\](.*)/.exec(line);
 	if(res_array) {
 		if(res_array[1] === 'single2' || res_array[1] === 'multiple') {
@@ -175,15 +162,14 @@ function process_line(line) {
 		return ;
 	}
 
-	// match (3) and (17)
+	// match (3) and (13)
 	res_array = /Tests Generated = (.*)/.exec(line);
 	if(res_array) {
 		currentRow.tests_num = res_array[1];
 		return ;
 	}
 
-	/**/
-	// match (4) and (18)
+	// match (4) and (14)
 	res_array = /real[\s]*((\d+)m)?(\d+(\.\d+)?)s/.exec(line);
 	if(res_array) {
 		var m = res_array[2];
@@ -191,68 +177,50 @@ function process_line(line) {
 		currentRow.total_time = m*60 + parseFloat(s);
 		return ;
 	}
-	
-	/*
-	// match (7) and (21)
-	res_array = /Time spent in total = (\d+) ms/.exec(line);
-	if(res_array) {
-		currentRow.total_time = res_array[1];
-		return ;
-	}
-	*/
 
-	// match (8) and (22)
+	// match (7) and (17)
 	res_array = /Time spent in bdd = (\d+) ms/.exec(line);
 	if(res_array) {
 		currentRow.bdd_time = res_array[1];
 		return ;
 	}
 
-	// match (9) and (23)
+	// match (8) and (18)
 	res_array = /Time spent in solver = (\d+) ms/.exec(line);
 	if(res_array) {
 		currentRow.solver_time = res_array[1];
 		return ;
 	}
 
-	/*
-	// match (10) and (20)
-	res_array = /Number of operations \(inc\. reexecution\) = (\d+)/.exec(line);
-	if(res_array) {
-		currentRow.op_num_reexecute = res_array[1];
-		return ;
-	}
-	*/
-
-	// match (10) and (24)
-	res_array = /Number of inputs = (\d+)/.exec(line);
-	if(res_array) {
-		currentRow.input_num = res_array[1];
-		return ;
-	}
-
-	// match (11) and (25)
-	res_array = /Number of within theory assignments = (\d+)/.exec(line);
-	if(res_array) {
-		currentRow.within_theory_assign = res_array[1];
-		return ;
-	}
-
-	// match (12) and (26)
+	// match (9) and (19)
 	res_array = /Number of operations = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.op_num = res_array[1];
 		return ;
 	}
 
-	// match (13) and (27)
+	// match (10) and (20)
+	res_array = /Number of operations \(inc\. reexecution\) = (\d+)/.exec(line);
+	if(res_array) {
+		currentRow.op_num_reexecute = res_array[1];
+		return ;
+	}
+
+	// match (11) and (21)
 	res_array = /Number of solver calls = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.solver_call_num = res_array[1];
 		return ;
 	}
 
-	// match (14) and (28)
+	// match (22)
+	res_array = /Number of inputs = (\d+)/.exec(line);
+	if(res_array) {
+		currentRow.input_num = res_array[1];
+		return ;
+	}
+
+	// match (23)
 	res_array = /vs-size: average = (\d+(\.(\d+))?) max = (\d+) min = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.avg_vs_size = res_array[1];
@@ -260,13 +228,6 @@ function process_line(line) {
 		currentRow.min_vs_size = res_array[5];
 		return ;
 	}
-
-	// match (15) and (29)
-	res_array = /paths to value ratio: average = ([^\s]+) max = ([^\s]+) min = ([^\s]+)/.exec(line);
-	if(res_array) {
-		currentRow.avg_pv_ratio = res_array[1];
-		currentRow.max_pv_ratio = res_array[2];
-		currentRow.min_pv_ratio = res_array[3];
-		return ;
-	}
 }
+
+
