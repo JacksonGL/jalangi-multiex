@@ -41,8 +41,8 @@ var graph = {
 };
 
 var list = [];
-for(var i=0;i<10;i++){
-    list[list.length] = [J$.readInput(1), J$.readInput(2)];
+for(var i=0;i<20;i++){
+    list[list.length] = [J$.readInput(1)%12, J$.readInput(2)%12];
     var edge = list[list.length-1];
     graph[edge[0]][edge[1]] = graph[edge[1]];
     graph[edge[1]][edge[0]] = graph[edge[0]];

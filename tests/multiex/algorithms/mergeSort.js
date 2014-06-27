@@ -97,3 +97,4 @@ for (i = 0; i < N; i++) {
 }
 var array = Mergesort.sort(array);
 console.log(JSON.stringify(array));
+
