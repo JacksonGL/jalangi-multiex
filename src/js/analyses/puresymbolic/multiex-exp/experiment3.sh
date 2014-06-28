@@ -65,9 +65,6 @@ runexp() {
 : <<'END' 
 END
 
-# priority queue
-runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
-
 # max element
 runexp "find_max" "tests/compos/findMax"
 
@@ -88,6 +85,9 @@ runexp "symbolic_array_index" "tests/compos/symbolicArrayIndex"
 
 # index Of full
 # runexp "index_of_full" "tests/compos/indexOfFull" # single2 runs forever;
+
+# priority queue
+runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
 
 # queue
 runexp "queue" "tests/multiex/datastructures/Queue"
