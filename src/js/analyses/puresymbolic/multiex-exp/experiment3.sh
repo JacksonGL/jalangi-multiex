@@ -65,11 +65,14 @@ runexp() {
 : <<'END' 
 END
 
+# priority queue
+runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
+
 # max element
 runexp "find_max" "tests/compos/findMax"
 
-# red black tree
-runexp "red_black" "tests/compos/redblack"
+# rbTree
+runexp "rbTree" "tests/compos/rbTree"
 
 # calc parser
 runexp "calc_parser" "tests/compos/parser"
@@ -86,17 +89,11 @@ runexp "symbolic_array_index" "tests/compos/symbolicArrayIndex"
 # index Of full
 # runexp "index_of_full" "tests/compos/indexOfFull" # single2 runs forever;
 
-# priority queue
-runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue"
-
 # queue
 runexp "queue" "tests/multiex/datastructures/Queue"
 
 # stack
 runexp "stack" "tests/multiex/datastructures/stack"
-
-# priority queue
-runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue"
 
 # double linked list
 runexp "double_linked_list" "tests/multiex/datastructures/DoubleLinkedList"
@@ -117,16 +114,16 @@ runexp "shell_sort" "tests/multiex/algorithms/shellsort"
 runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 
 # fac
-# runexp "index_of" "tests/compos/fac"
+# runexp "fac" "tests/compos/fac"
 
 # index Of
 # runexp "index_of" "tests/compos/indexOf"
 
 # knapsack
-# runexp "prim" "tests/multiex/algorithms/knapsack"
+# runexp "knapsack" "tests/multiex/algorithms/knapsack"
 
 # bfs
-# runexp "prim" "tests/multiex/algorithms/bfs"
+# runexp "bfs" "tests/multiex/algorithms/bfs"
 
 # merge sort
 # runexp "merge_sort" "tests/multiex/algorithms/mergeSort"
@@ -163,5 +160,10 @@ runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 
 # deque linked list
 # runexp "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
+
+# red black tree
+# runexp "red_black" "tests/compos/redblack" # programs contains bug, result not correct
+
+
 
 echo '[*]exp-done' >> result.txt

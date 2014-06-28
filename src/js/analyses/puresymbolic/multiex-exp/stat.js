@@ -39,10 +39,10 @@
 */
 
 var titles = ['data_name', 'algorithm', 'total_time', 
-	'bdd_time', 'solver_time', 'within_theory_assign','op_num','multiex_op_num', 
+	'bdd_time', 'solver_time', 'within_theory_assign', 'outside_theory_assign','op_num','multiex_op_num', 
 	//'op_num_reexecute', 
 	'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size',
-	'avg_pv_ratio', 'max_pv_ratio', 'min_pv_ratio'];
+	'avg_pv_ratio', 'max_pv_ratio', 'min_pv_ratio','speedup'];
 
 function createRow() {
 	return {
@@ -53,6 +53,7 @@ function createRow() {
 		bdd_time: null,
 		solver_time: null,
 		within_theory_assign: null,
+		outside_theory_assign: null,
 		op_num: null,
 		multiex_op_num: null,
 		//op_num_reexecute: null,
@@ -63,7 +64,8 @@ function createRow() {
 		min_vs_size: null,
 		avg_pv_ratio: null,
 		max_pv_ratio: null,
-		min_pv_ratio: null
+		min_pv_ratio: null,
+		speedup: null
 	};
 }
 
@@ -80,7 +82,16 @@ function dumpTableToString() {
 	return table.join('\r\n');
 }
 
+var count = 0;
+var lastTotalTime = 0;
+
 function appendRow(row) {
+	count++;
+	if(count%2==0) { // appending the multiple results
+		currentRow.speedup = lastTotalTime/currentRow.total_time;
+	} else { // appending the DSE results
+		lastTotalTime = currentRow.total_time;
+	}
 	var row_str = '';
 	for (var i=0;i<titles.length;i++) {
 		row_str += currentRow[titles[i]] + ',';
@@ -118,6 +129,7 @@ rd.on('line', function(line) {
 (9)		Time spent in solver = 33936 ms
 (10)	Number of inputs = 1952
 (11)	Number of within theory assignments = 449
+(11-1)	Number of outside theory assignments = 780
 (12)	Number of operations = 7525
 (12-1)	Number of multiex operations = 962
 (13)	Number of solver calls = 1951
@@ -133,6 +145,7 @@ rd.on('line', function(line) {
 (23)	Time spent in solver = 6279 ms
 (24)	Number of inputs = 337
 (25)	Number of within theory assignments = 449
+(25-1)	Number of outside theory assignments = 780
 (26)	Number of operations = 1783
 (26-1)	Number of multiex operations = 962
 (27)	Number of solver calls = 336
@@ -229,7 +242,7 @@ function process_line(line) {
 	*/
 
 	// match (10) and (24)
-	res_array = /Number of inputs = (\d+)/.exec(line);
+	res_array = /Number of MULTIEX inputs = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.input_num = res_array[1];
 		return ;
@@ -239,6 +252,13 @@ function process_line(line) {
 	res_array = /Number of within theory assignments = (\d+)/.exec(line);
 	if(res_array) {
 		currentRow.within_theory_assign = res_array[1];
+		return ;
+	}
+
+	// match (11-1) and (25-1)
+	res_array = /Number of outside theory assignments = (\d+)/.exec(line);
+	if(res_array) {
+		currentRow.outside_theory_assign = res_array[1];
 		return ;
 	}
 
