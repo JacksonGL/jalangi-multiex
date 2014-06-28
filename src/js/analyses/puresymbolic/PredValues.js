@@ -91,7 +91,7 @@
     PredValues.prototype = {
         constructor:PredValues,
 
-        pathsToValueRatio:function (pred, value) {
+        compactSize: function() {
             var i, len = this.values.length, j, similars=0;
 
             for (i = 0; i < len; ++i) {
@@ -102,7 +102,12 @@
                     }
                 }
             }
-            return len*1.0/(len-similars);
+            return len - similars;
+        },
+
+        pathsToValueRatio:function () {
+            var len = this.values.length;
+            return len*1.0/this.compactSize();
         },
 
         isWithinTheory: function() {
