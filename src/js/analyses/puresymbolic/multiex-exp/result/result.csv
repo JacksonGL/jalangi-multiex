@@ -1,4 +1,4 @@
-data_name,algorithm,total_time,bdd_time,solver_time,within_theory_assign,outside_theory_assign,op_num,multiex_op_num,solver_call_num,input_num,avg_vs_size,max_vs_size,min_vs_size,avg_pv_ratio,max_pv_ratio,min_pv_ratio,speedup
+dataset,algorithm,Time spent in total,Time spent in bdd,Time spent in solver,Number of within theory assignments,Number of outside theory assignments,Number of operations,Number of multiex operations,Number of solver calls,Number of MULTIEX inputs,average value summary size,maximum value summary size,minimum value summary size,average paths to value ratio,maximum paths to value ratio,minimum paths to value ratio,DSE/Multiex total time speedup
 find_max,single2,80916,30257,49641,102,null,9282,174,2044,20,40.72549019607843,512,1,22.9932150638033,512,1,null,
 null,multiple,5212,66,5104,102,null,246,174,180,20,1.8823529411764706,10,1,1,1,1,15.524942440521873,
 rbTree,single2,447799,199029,242612,5036,4578,31826,1632,9924,320,132.12190555439983,542,1,43.55051314055875,154.5,1,null,

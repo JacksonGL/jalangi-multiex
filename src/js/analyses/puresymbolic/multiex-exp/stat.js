@@ -44,6 +44,13 @@ var titles = ['data_name', 'algorithm', 'total_time',
 	'solver_call_num', 'input_num', 'avg_vs_size', 'max_vs_size', 'min_vs_size',
 	'avg_pv_ratio', 'max_pv_ratio', 'min_pv_ratio','speedup'];
 
+var titles_full = ['dataset', 'algorithm', 'Time spent in total', 'Time spent in bdd',
+	'Time spent in solver', 'Number of within theory assignments', 'Number of outside theory assignments',
+	'Number of operations', 'Number of multiex operations', 'Number of solver calls',
+	'Number of MULTIEX inputs',
+	'average value summary size', 'maximum value summary size', 'minimum value summary size',
+	'average paths to value ratio', 'maximum paths to value ratio', 'minimum paths to value ratio', 'DSE/Multiex total time speedup']
+
 function createRow() {
 	return {
 		data_name: null,
@@ -75,7 +82,7 @@ var current_state = 1;
 var table = null;
 function createTable() {
 	table = [];
-	table.push(titles.join(','));
+	table.push(titles_full.join(','));
 }
  
 function dumpTableToString() {
