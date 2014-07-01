@@ -90,9 +90,9 @@ var titles = ['data_name', 'algorithm',
 	'speedup'];
 
 var titles_full = ['dataset', 'algorithm', 
-	'Total Time (ms)', 
-	'BDD Time (ms)',
-	'Solver Time (ms)',
+	'Total Time', 
+	'BDD Time',
+	'Solver Time',
 	'Inside Theory Assgn', 
 	'Outside Theory Assgn',
 	'\\# of Operations', 
@@ -169,8 +169,16 @@ function appendRow(row) {
 		currentRow.speedup = lastTotalTime/currentRow.total_time;
 	} else { // appending the DSE results
 		// the speedup should be ("DSE Total Time" - "DSE BDD Time") / "Multiex Total Time"
-		lastTotalTime = currentRow.total_time - currentRow.bdd_time;
+		// exclude the BDD Time from the "DSE Total Time"
+		currentRow.total_time = currentRow.total_time - currentRow.bdd_time;
+		lastTotalTime = currentRow.total_time;
 	}
+
+	// change units of time from milliseconds into seconds
+	currentRow.total_time /= 1000;
+	currentRow.bdd_time /= 1000;
+	currentRow.solver_time /= 1000;
+
 	var row_str = '';
 	for (var i=0;i<titles.length;i++) {
 		var value = formatCell(currentRow[titles[i]]);
