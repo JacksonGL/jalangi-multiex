@@ -66,52 +66,52 @@ runexp() {
 END
 
 # max element
-runexp "find_max" "tests/compos/findMax"
+runexp "Find Max" "tests/compos/findMax"
 
 # rbTree
-runexp "rbTree" "tests/compos/rbTree"
+runexp "Red Black" "tests/compos/rbTree"
 
 # calc parser
-runexp "calc_parser" "tests/compos/parser"
+runexp "Calc Parser" "tests/compos/parser"
 
 # PL/0 parser
-runexp "pl_0_parser" "tests/compos/parser2"
+runexp "PL/0 Parser" "tests/compos/parser2"
 
 # binary seearch tree
-runexp "binary_search_tree" "tests/compos/bst"
+runexp "BST" "tests/compos/bst"
 
 # symbolic array index
-runexp "symbolic_array_index" "tests/compos/symbolicArrayIndex"
+runexp "Array Index" "tests/compos/symbolicArrayIndex"
 
-# index Of full
+# index of full
 # runexp "index_of_full" "tests/compos/indexOfFull" # single2 runs forever;
 
 # priority queue
-runexp "priority_queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
+runexp "Priority Queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
 
 # queue
-runexp "queue" "tests/multiex/datastructures/Queue"
+runexp "Queue" "tests/multiex/datastructures/Queue"
 
 # stack
-runexp "stack" "tests/multiex/datastructures/stack"
+runexp "Stack" "tests/multiex/datastructures/stack"
 
 # double linked list
-runexp "double_linked_list" "tests/multiex/datastructures/DoubleLinkedList"
+runexp "Linked List" "tests/multiex/datastructures/DoubleLinkedList"
 
 # heap sort
-runexp "head_sort" "tests/multiex/algorithms/heapSort"
+runexp "Heap Sort" "tests/multiex/algorithms/heapSort"
 
 # selection sort
-runexp "selection_sort" "tests/multiex/algorithms/selection-sort"
+# runexp "Selection Sort" "tests/multiex/algorithms/selection-sort"
 
 # insertion sort
-runexp "insertion_sort" "tests/multiex/algorithms/insertion-sort"
+# runexp "Insertion Sort" "tests/multiex/algorithms/insertion-sort"
 
 # shell sort
-runexp "shell_sort" "tests/multiex/algorithms/shellsort"
+# runexp "Shell Sort" "tests/multiex/algorithms/shellsort"
 
 # Kadane max sub array algorithm
-runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
+runexp "Kadane Subarray" "tests/multiex/algorithms/maxsubarray"
 
 # fac
 # runexp "fac" "tests/compos/fac"
@@ -163,7 +163,5 @@ runexp "Kadane-max-subarray" "tests/multiex/algorithms/maxsubarray"
 
 # red black tree
 # runexp "red_black" "tests/compos/redblack" # programs contains bug, result not correct
-
-
 
 echo '[*]exp-done' >> result.txt
