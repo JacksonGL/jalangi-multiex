@@ -38,7 +38,7 @@
 	3: result.csv
 */
 
-/**/
+/*
 var titles = ['data_name', 'algorithm', 
 	'total_time', 'total_time_count',
 	'bdd_time', 'bdd_time_count', 
@@ -60,12 +60,12 @@ var titles_full = ['dataset', 'algorithm',
 	'Number of within theory assignments', 'Number of outside theory assignments',
 	'Number of operations', 'Number of multiex operations', 
 	'Number of solver calls', 'Number of sat', 'Number of unsat',
-	'Nunber of DSE inputs', 'Number of MULTIEX inputs', 
+	'Number of DSE inputs', 'Number of MULTIEX inputs', 
 	'Number of solver cache hit', 
 	'average value summary size', 'maximum value summary size', 'minimum value summary size', 
 	'average paths to value ratio', 'maximum paths to value ratio', 'minimum paths to value ratio', 
 	'DSE/Multiex total time speedup'];
-
+*/
 
 /*
 var titles_full = ['Name', 'Algorithm', 'Total Time (ms)', 'BDD Time (ms)',
@@ -75,6 +75,31 @@ var titles_full = ['Name', 'Algorithm', 'Total Time (ms)', 'BDD Time (ms)',
 	'Avg Value Summary Size', 'Max Value Summary Size', 'Min Value Summary Size',
 	'Avg Paths to Value Ratio', 'Max Paths to Value Ratio', 'Min Paths to Value Ratio', 'Total Time Speedup'];
 */
+
+
+var titles = ['data_name', 'algorithm', 
+	'total_time',
+	'bdd_time', 
+	'solver_time', 
+	'within_theory_assign', 
+	'outside_theory_assign',
+	'op_num',
+	'solver_call_num', 
+	'avg_vs_size',
+	'avg_pv_ratio',
+	'speedup'];
+
+var titles_full = ['dataset', 'algorithm', 
+	'Total Time (ms)', 
+	'BDD Time (ms)',
+	'Solver Time (ms)',
+	'Inside Theory Assgn', 
+	'Outside Theory Assgn',
+	'\\# of Operations', 
+	'\\# of Solver Calls',
+	'VS Size',
+	'Sharing Factor',
+	'Speedup'];
 
 function createRow() {
 	return {

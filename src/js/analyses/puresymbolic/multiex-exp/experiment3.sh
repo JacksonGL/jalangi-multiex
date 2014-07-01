@@ -65,6 +65,7 @@ runexp() {
 : <<'END' 
 END
 
+
 # max element
 runexp "Find Max" "tests/compos/findMax"
 
@@ -163,5 +164,6 @@ runexp "Kadane Subarray" "tests/multiex/algorithms/maxsubarray"
 
 # red black tree
 # runexp "red_black" "tests/compos/redblack" # programs contains bug, result not correct
+
 
 echo '[*]exp-done' >> result.txt
