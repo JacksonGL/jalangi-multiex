@@ -84,9 +84,6 @@ runexp "BST" "tests/compos/bst"
 # symbolic array index
 runexp "Array Index" "tests/compos/symbolicArrayIndex"
 
-# index of full
-# runexp "index_of_full" "tests/compos/indexOfFull" # single2 runs forever;
-
 # priority queue
 runexp "Priority Queue" "tests/multiex/datastructures/PriorityQueue" # throw exception during the experiment
 
@@ -102,68 +99,9 @@ runexp "Linked List" "tests/multiex/datastructures/DoubleLinkedList"
 # heap sort
 runexp "Heap Sort" "tests/multiex/algorithms/heapSort"
 
-# selection sort
-# runexp "Selection Sort" "tests/multiex/algorithms/selection-sort"
-
-# insertion sort
-# runexp "Insertion Sort" "tests/multiex/algorithms/insertion-sort"
-
-# shell sort
-# runexp "Shell Sort" "tests/multiex/algorithms/shellsort"
-
 # Kadane max sub array algorithm
 runexp "Kadane Subarray" "tests/multiex/algorithms/maxsubarray"
 
-# fac
-# runexp "fac" "tests/compos/fac"
-
-# index Of
-# runexp "index_of" "tests/compos/indexOf"
-
-# knapsack
-# runexp "knapsack" "tests/multiex/algorithms/knapsack"
-
-# bfs
-# runexp "bfs" "tests/multiex/algorithms/bfs"
-
-# merge sort
-# runexp "merge_sort" "tests/multiex/algorithms/mergeSort"
-
-# prim algorithm
-# runexp "prim" "tests/multiex/algorithms/Prim"
-
-# damerau levenshtein
-# runexp "damerau_levenshtein" "tests/multiex/algorithms/Damerau-Levenshtein"
-
-# 3d-cube
-# runexp "3d_cube" "tests/multiex/algorithms/3d-cube"
-
-# 3d-morph
-# runexp "3d_morph" "tests/multiex/algorithms/3d-morph"
-
-# 3d-raytrace
-# runexp "3d_raytrace" "tests/multiex/algorithms/3d-raytrace"
-
-# access fannkuch
-# runexp "access_fannkuch" "tests/multiex/algorithms/access-fannkuch"
-
-# run length
-# runexp "run_length" "tests/multiex/algorithms/runlength"
-
-# longest increasing subsequence
-# runexp "longest_increase_subsequence" "tests/multiex/algorithms/long-increase-subseq"
-
-# Bresenham drawline algorithm
-# runexp "bresenham_drawline" "tests/multiex/algorithms/Bresenham-drawline"
-
-# kruskal algorithm
-# runexp "kruskal" "tests/multiex/algorithms/Kruskal"
-
-# deque linked list
-# runexp "deque_linked_list" "tests/multiex/datastructures/Deque_linkedList"
-
-# red black tree
-# runexp "red_black" "tests/compos/redblack" # programs contains bug, result not correct
 
 
 echo '[*]exp-done' >> result.txt
