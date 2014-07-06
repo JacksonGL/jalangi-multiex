@@ -55,7 +55,6 @@ PriorityQueue.prototype.isEmpty = function() {
  */
 PriorityQueue.prototype.peek = function() {
     if (this.isEmpty()) throw new Error('PriorityQueue is empty');
-
     return this._elements[0];
 };
 
@@ -166,12 +165,13 @@ PriorityQueue.prototype._swap = function(a, b) {
     this._elements[b] = aux;
 };
 
-
+var queue = new PriorityQueue(function(a, b) {
+    //return a.cash - b.cash;
+    return a - b;
+});
 
 function testRound(){
-    var queue = new PriorityQueue(function(a, b) {
-        return a.cash - b.cash;
-    });
+    
     var flag = J$.readInput(1);
     if(flag > 100){
         queue.enq(J$.readInput(2));
@@ -188,3 +188,4 @@ testRound();
 testRound();
 testRound();
 testRound();
+

@@ -64,8 +64,6 @@ runexp() {
 
 : <<'END' 
 END
-
-
 # max element
 runexp "Find Max" "tests/compos/findMax"
 
@@ -102,6 +100,11 @@ runexp "Heap Sort" "tests/multiex/algorithms/heapSort"
 # Kadane max sub array algorithm
 runexp "Kadane Subarray" "tests/multiex/algorithms/maxsubarray"
 
+# BDD
+runexp "BDD" "tests/compos/BDD"
+
+# quick sort
+runexp "Quick Sort" "tests/compos/qsort"
 
 
 echo '[*]exp-done' >> result.txt

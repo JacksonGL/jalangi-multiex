@@ -68,10 +68,13 @@ var stack = new Stack();
 
 
 function testRound(){
-    if(J$.readInput(1) > 10){
+    var input = J$.readInput(1);
+    if(input > 10){
         stack.Push(J$.readInput(2));
-    } else {
+    } else if (input > 9){
         stack.Pop();
+    } else {
+        stack.Peek();
     }
 }
 testRound();
