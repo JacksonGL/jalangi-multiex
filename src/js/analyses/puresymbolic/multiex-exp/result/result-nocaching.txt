@@ -437,4 +437,115 @@ Number of unsat = 20
 Number of DSE inputs = 2
 vs-size: average = 2.4358974358974357 max = 16 min = 1
 paths to value ratio: average = 1 max = 1 min = 1
+[*]BDD
+[*]single2
+Tests Generated = 1
+real	5m36.871s
+user	5m19.827s
+sys	0m12.731s
+Time spent in bdd = 288672 ms (count = 55870488)
+Time spent in total = 335161 ms (count = 2)
+Time spent in solver = 35873 ms (count = 2044)
+Number of multiex operations = 82862
+Number of operations = 661700
+Number of within theory assignments = 10852
+Number of solver calls = 2044
+Number of sat = 2044
+Number of outside theory assignments = 34128
+Number of MULTIEX inputs = 2348
+Number of DSE inputs = 1024
+vs-size: average = 17.322721209426412 max = 512 min = 1
+paths to value ratio: average = 6.421011451547673 max = 512 min = 1
+[*]multiple
+Tests Generated = 1
+real	0m6.995s
+user	0m6.072s
+sys	0m0.658s
+Time spent in bdd = 4210 ms (count = 524808)
+Time spent in total = 6175 ms (count = 2)
+Time spent in solver = 1213 ms (count = 84)
+Number of multiex operations = 82862
+Number of operations = 120334
+Number of within theory assignments = 10886
+Number of solver calls = 84
+Number of sat = 84
+Number of outside theory assignments = 15838
+Number of MULTIEX inputs = 2348
+Number of DSE inputs = 2
+vs-size: average = 2.4547971860499924 max = 25 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
+[*]Quick Sort
+[*]single2
+Tests Generated = 1
+real	0m54.847s
+user	0m39.208s
+sys	0m9.879s
+Time spent in bdd = 14327 ms (count = 3005320)
+Time spent in total = 54222 ms (count = 2)
+Time spent in solver = 39051 ms (count = 1916)
+Number of multiex operations = 4468
+Number of operations = 24672
+Number of within theory assignments = 2308
+Number of solver calls = 1916
+Number of sat = 1436
+Number of MULTIEX inputs = 168
+Number of unsat = 480
+Number of DSE inputs = 240
+vs-size: average = 32.79202772963605 max = 360 min = 1
+paths to value ratio: average = 7.092648757943402 max = 120 min = 1
+[*]multiple
+Tests Generated = 1
+real	0m15.761s
+user	0m10.572s
+sys	0m3.251s
+Time spent in bdd = 702 ms (count = 39028)
+Time spent in total = 15143 ms (count = 2)
+Time spent in solver = 14332 ms (count = 624)
+Number of multiex operations = 4468
+Number of operations = 6528
+Number of within theory assignments = 1460
+Number of solver calls = 624
+Number of sat = 512
+Number of MULTIEX inputs = 168
+Number of unsat = 112
+Number of DSE inputs = 2
+vs-size: average = 3.6301369863013697 max = 5 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
+[*]Symbolic Arithmetic
+[*]single2
+Tests Generated = 1
+real    7m30.778s
+user    7m3.932s
+sys    0m22.304s
+Time spent in bdd = 373691 ms (count = 71653148)
+Time spent in total = 449104 ms (count = 2)
+Time spent in solver = 64793 ms (count = 3640)
+Number of multiex operations = 9974
+Number of operations = 363504
+Number of within theory assignments = 1836
+Number of solver calls = 3640
+Number of sat = 3640
+Number of outside theory assignments = 176
+Number of MULTIEX inputs = 38
+Number of DSE inputs = 1458
+vs-size: average = 76.29125248508946 max = 729 min = 1
+paths to value ratio: average = 39.3047548045063 max = 729 min = 1
+[*]multiple
+Tests Generated = 1
+real    0m2.339s
+user    0m1.434s
+sys    0m0.589s
+Time spent in bdd = 146 ms (count = 32780)
+Time spent in total = 1531 ms (count = 2)
+Time spent in solver = 1260 ms (count = 90)
+Number of multiex operations = 9974
+Number of operations = 10684
+Number of within theory assignments = 424
+Number of solver calls = 90
+Number of sat = 90
+Number of outside theory assignments = 168
+Number of MULTIEX inputs = 38
+Number of DSE inputs = 2
+vs-size: average = 1.820945945945946 max = 4 min = 1
+paths to value ratio: average = 1 max = 1 min = 1
 [*]exp-done

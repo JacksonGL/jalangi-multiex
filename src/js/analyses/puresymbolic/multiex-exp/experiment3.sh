@@ -62,8 +62,11 @@ runexp() {
 	rm merge_flag.txt
 }
 
+
+
 : <<'END' 
 END
+
 # max element
 runexp "Find Max" "tests/compos/findMax"
 
@@ -106,5 +109,7 @@ runexp "BDD" "tests/compos/BDD"
 # quick sort
 runexp "Quick Sort" "tests/compos/qsort"
 
+# symbolic arithmetic
+runexp "Symbolic Arithmetic" "tests/compos/SymbolicArithmetic"
 
 echo '[*]exp-done' >> result.txt
