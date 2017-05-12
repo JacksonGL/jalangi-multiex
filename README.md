@@ -82,7 +82,7 @@ tests/sunspider1/.
 
     python scripts/testspv.py
 
-We also have test drivers implemented in JavaScript using [mocha](http://visionmedia.github.io/mocha/), located under `node_test`.  So, to run the basic unit tests, you can do:
+We also have test drivers implemented in JavaScript using [mocha](http://mochajs.org/), located under `node_test`.  So, to run the basic unit tests, you can do:
 
     ./node_modules/.bin/mocha --reporter spec node_test/unitTests.js
 
